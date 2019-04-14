@@ -1,0 +1,177 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+<link rel="stylesheet" href="/plugs/Semantic-UI-master/dist/semantic.css">
+<link rel="stylesheet" href="/plugs/Semantic-UI-master/dist/semantic.js">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<style type="text/css">
+
+    .header-animate{
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-name: fadeInLeft;
+    }
+    li{
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-name: fade;
+    }
+    .bg{
+        background: url("/images/download.jpg") !important;
+    }
+
+    .masthead.segment {
+        min-height: 600px;
+        padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+        margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+        margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+        margin-top: 3em;
+        margin-bottom: 0em;
+        font-size: 4em;
+        font-weight: normal;
+    }
+    .masthead h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+        padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+        font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+        margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+        clear: both;
+    }
+    .ui.vertical.stripe p {
+        font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+        margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+        padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .footer.segment {
+        padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+        display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .ui.fixed.menu {
+            display: none !important;
+        }
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+            display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+            display: block;
+        }
+        .masthead.segment {
+            min-height: 350px;
+        }
+        .masthead h1.ui.header {
+            font-size: 2em;
+            margin-top: 1.5em;
+        }
+        .masthead h2 {
+            margin-top: 0.5em;
+            font-size: 1.5em;
+        }
+    }
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -50%, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+    @keyframes fade {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 0, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+    body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+    a{color:#2d374b;text-decoration:none}
+    a:hover{color:#cd0200;text-decoration:underline}
+    em{font-style:normal}
+    li{list-style:none}
+    img{border:0;vertical-align:middle}
+    table{border-collapse:collapse;border-spacing:0}
+    p{word-wrap:break-word}
+
+
+</style>
+<script>
+
+
+</script>
+
+<body  >
+<div class="container" style="width: 100%;margin: 0 auto;">
+    <div class="ui inverted vertical masthead center aligned segment bg" >
+
+        <div class="ui container header-animate" >
+            <div class="ui large secondary inverted pointing menu" style="border: none !important;">
+                <a class="toc item">
+                    <i class="sidebar icon"></i>
+                </a>
+                <a class="active item">首页</a>
+                <a class="item">文章</a>
+                <a class="item">分类</a>
+                <div class="right item">
+                    <a class="ui inverted button">Log in</a>
+                    <a class="ui inverted button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui text container header-animate" >
+            <h1 class="ui inverted header" >
+                路途遥远
+            </h1>
+            <h2>路途<span style="color: gray;">遥远,</span>但我不会后退半步</h2>
+            <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+        </div>
+
+    </div>
+    <div class="ui vertical center list" style="width: 80%;display: inline-block;margin-left: 2em">
+
+    </div>
+</div>
+</body>
+</html>
