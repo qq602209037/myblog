@@ -2,9 +2,13 @@ package com.yw.myblog.entity;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import cn.afterturn.easypoi.excel.annotation.ExcelCollection;
+import cn.afterturn.easypoi.excel.annotation.ExcelEntity;
+import cn.afterturn.easypoi.excel.annotation.ExcelTarget;
 
 import java.util.List;
 
+
+@ExcelTarget("employee")
 public class Employee {
     @Excel(name="办事处")
     String bsc;
@@ -26,9 +30,9 @@ public class Employee {
     String fy;
     @Excel(name = "销售流向（30）")
     String xslx;
-    @ExcelCollection(name="发货")
+    @ExcelEntity(name = "发货")
     List<EmployeeFh> fhObj;
-    @ExcelCollection(name = "回款")
+    @ExcelEntity(id="回款")
     List<EmployeeHk> hkObj;
     @Excel(name = "销售任务（15）")
     String xsrw;

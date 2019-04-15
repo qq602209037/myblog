@@ -1,7 +1,9 @@
 package com.yw.myblog.entity;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
+import cn.afterturn.easypoi.excel.annotation.ExcelTarget;
 
+@ExcelTarget("employeeHk")
 public class EmployeeHk {
     @Excel(name = "商务回款任务（元）")
     String swhkrw;

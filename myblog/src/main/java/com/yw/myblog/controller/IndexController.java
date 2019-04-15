@@ -5,6 +5,8 @@ import cn.afterturn.easypoi.excel.ExcelImportUtil;
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import cn.afterturn.easypoi.excel.entity.ImportParams;
 import com.yw.myblog.entity.Employee;
+import com.yw.myblog.entity.EmployeeFh;
+import com.yw.myblog.entity.EmployeeHk;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -47,6 +49,8 @@ public class IndexController {
         importParams.setLastOfInvalidRow(2);
         long start = System.currentTimeMillis();
         List<Employee> result = ExcelImportUtil.importExcel(file.getInputStream(),Employee.class,importParams);
+
+
 
         for(int i = 0;i<result.size();++i){
             System.out.println(ReflectionToStringBuilder.toString(result.get(i)));
