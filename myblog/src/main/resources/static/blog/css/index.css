@@ -1,0 +1,126 @@
+body {
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: "SimSun","宋体","Arial Narrow";
+}
+
+.header{
+    background: url("../images/header.jpg") no-repeat center center;
+    height:275px;
+    position: relative;
+
+}
+.header-inner-top{
+
+}
+.header-inner-top-left {
+    display: inline-block;
+    margin-left: 120px;
+    margin-top: 10px;
+    color:#fff;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+}
+.header-inner-top-right{
+    display:inline-block;
+
+
+
+
+}
+.header-inner-top-right ul{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    list-style: none;
+}
+.header-inner-top-right ul li{
+    float: left;
+    margin-left:25px;
+    color:#fff;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+.header-inner-top-right ul li:last-child{
+    margin-right:100px
+}
+.header-inner-top-right ul li a{
+    color:#fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.header-inner-top-right ul li a:hover{
+    color: #ffff77;
+    text-decoration: none;
+}
+
+.header-inner-top-center{
+    position: absolute;
+    top: 0;
+
+    margin: 0 auto;
+    width: 100%;
+
+    height: 100%;
+
+
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    margin-top:60px;
+}
+.content .content-left .content-left-item{
+
+    width: 60%;
+
+    float: left;
+
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.content .content-left .content-left-item div{
+    margin-bottom: 10px;
+}
+.content .content-left .content-left-item .content-left-item-header{
+    font-size: 20px;
+}
+.content .content-left .content-left-item .content-left-item-header span:nth-child(2){
+    color: #cbcbcb;
+}
+.content .content-left .content-left-item div:nth-child(n+1):hover{
+    color: #d5555f;
+}
+.content .content-left .content-left-item .content-left-item-title{
+
+
+    font-size: 30px;
+    font-weight: 600;
+}
+.content .content-left .content-left-item .content-left-item-content{
+    color:darkgray;
+    line-height: 25px;
+
+}
+
+.content .content-left .content-left-item .content-left-item-footer{
+    vertical-align: center;
+}
+.content .content-right {
+    width: 40%;
+    height: 500px;
+    float: left;
+    background: #a6e1ec;
+}
